@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AA999E6D25C632BE00A90290 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA999E6C25C632BE00A90290 /* Preview Assets.xcassets */; };
 		AA999E7925C632BF00A90290 /* GitUpGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA999E7825C632BF00A90290 /* GitUpGraphTests.swift */; };
 		AA999E8425C632BF00A90290 /* GitUpGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA999E8325C632BF00A90290 /* GitUpGraphUITests.swift */; };
+		AAE09A9325C7C9AD008531DF /* GitUpKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		AA999E7F25C632BF00A90290 /* GitUpGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitUpGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA999E8325C632BF00A90290 /* GitUpGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUpGraphUITests.swift; sourceTree = "<group>"; };
 		AA999E8525C632BF00A90290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GitUpKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE09A9325C7C9AD008531DF /* GitUpKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 				AA999E7725C632BF00A90290 /* GitUpGraphTests */,
 				AA999E8225C632BF00A90290 /* GitUpGraphUITests */,
 				AA999E6325C632BD00A90290 /* Products */,
+				AAE09A9125C7C9AD008531DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				AA999E8525C632BF00A90290 /* Info.plist */,
 			);
 			path = GitUpGraphUITests;
+			sourceTree = "<group>";
+		};
+		AAE09A9125C7C9AD008531DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
