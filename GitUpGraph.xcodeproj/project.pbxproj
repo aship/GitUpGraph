@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		AA999E6D25C632BE00A90290 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA999E6C25C632BE00A90290 /* Preview Assets.xcassets */; };
 		AA999E7925C632BF00A90290 /* GitUpGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA999E7825C632BF00A90290 /* GitUpGraphTests.swift */; };
 		AA999E8425C632BF00A90290 /* GitUpGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA999E8325C632BF00A90290 /* GitUpGraphUITests.swift */; };
+		AAE09A9325C7C9AD008531DF /* GitUpKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */; };
+		AA9D17A125C7A37A00F41426 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D17A025C7A37A00F41426 /* GraphView.swift */; };
+		AA9D17A725C7A39600F41426 /* PNGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D17A625C7A39600F41426 /* PNGView.swift */; };
+		AA9D17BE25C7A52700F41426 /* GraphWindowViiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D17BD25C7A52700F41426 /* GraphWindowViiew.swift */; };
+		AA9D17C325C7A52C00F41426 /* GUUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D17C225C7A52C00F41426 /* GUUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,12 @@
 		AA999E7F25C632BF00A90290 /* GitUpGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitUpGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA999E8325C632BF00A90290 /* GitUpGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUpGraphUITests.swift; sourceTree = "<group>"; };
 		AA999E8525C632BF00A90290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GitUpKit.xcframework; sourceTree = "<group>"; };
+		AA9D17A025C7A37A00F41426 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		AA9D17A625C7A39600F41426 /* PNGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNGView.swift; sourceTree = "<group>"; };
+		AA9D17AE25C7A3DA00F41426 /* GitUpGraph-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitUpGraph-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA9D17BD25C7A52700F41426 /* GraphWindowViiew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWindowViiew.swift; sourceTree = "<group>"; };
+		AA9D17C225C7A52C00F41426 /* GUUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GUUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE09A9325C7C9AD008531DF /* GitUpKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +92,7 @@
 				AA999E7725C632BF00A90290 /* GitUpGraphTests */,
 				AA999E8225C632BF00A90290 /* GitUpGraphUITests */,
 				AA999E6325C632BD00A90290 /* Products */,
+				AAE09A9125C7C9AD008531DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +109,14 @@
 		AA999E6425C632BD00A90290 /* GitUpGraph */ = {
 			isa = PBXGroup;
 			children = (
-				AA999E6525C632BD00A90290 /* GitUpGraphApp.swift */,
-				AA999E6725C632BD00A90290 /* ContentView.swift */,
+				AA9D179B25C7A30900F41426 /* App */,
+				AA9D179C25C7A31B00F41426 /* Views */,
+				AA9D17A525C7A38C00F41426 /* Functions */,
 				AA999E6925C632BE00A90290 /* Assets.xcassets */,
 				AA999E6E25C632BE00A90290 /* Info.plist */,
 				AA999E6F25C632BE00A90290 /* GitUpGraph.entitlements */,
 				AA999E6B25C632BE00A90290 /* Preview Content */,
+				AA9D17AE25C7A3DA00F41426 /* GitUpGraph-Bridging-Header.h */,
 			);
 			path = GitUpGraph;
 			sourceTree = "<group>";
@@ -130,6 +145,41 @@
 				AA999E8525C632BF00A90290 /* Info.plist */,
 			);
 			path = GitUpGraphUITests;
+			sourceTree = "<group>";
+		};
+		AAE09A9125C7C9AD008531DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE09A9225C7C9AD008531DF /* GitUpKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA9D179B25C7A30900F41426 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA999E6525C632BD00A90290 /* GitUpGraphApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA9D179C25C7A31B00F41426 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA999E6725C632BD00A90290 /* ContentView.swift */,
+				AA9D17BD25C7A52700F41426 /* GraphWindowViiew.swift */,
+				AA9D17A025C7A37A00F41426 /* GraphView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA9D17A525C7A38C00F41426 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				AA9D17C225C7A52C00F41426 /* GUUserDefaults.swift */,
+				AA9D17A625C7A39600F41426 /* PNGView.swift */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +249,7 @@
 				TargetAttributes = {
 					AA999E6125C632BD00A90290 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					AA999E7325C632BF00A90290 = {
 						CreatedOnToolsVersion = 12.4;
@@ -261,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9D17C325C7A52C00F41426 /* GUUserDefaults.swift in Sources */,
+				AA9D17A725C7A39600F41426 /* PNGView.swift in Sources */,
 				AA999E6825C632BD00A90290 /* ContentView.swift in Sources */,
+				AA9D17BE25C7A52700F41426 /* GraphWindowViiew.swift in Sources */,
 				AA999E6625C632BD00A90290 /* GitUpGraphApp.swift in Sources */,
+				AA9D17A125C7A37A00F41426 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = GitUpGraph/GitUpGraph.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,6 +488,8 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "info.office-aship.GitUpGraph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitUpGraph/GitUpGraph-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -441,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = GitUpGraph/GitUpGraph.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -455,6 +514,7 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "info.office-aship.GitUpGraph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitUpGraph/GitUpGraph-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
