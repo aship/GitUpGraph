@@ -13,5 +13,9 @@ struct GitUpGraphApp: App {
         WindowGroup {
             ContentView()
         }
+        WindowGroup("graph_window") {
+            GraphWindowView()
+        }
+        .handlesExternalEvents(matching: Set(arrayLiteral: "*"))
     }
 }
