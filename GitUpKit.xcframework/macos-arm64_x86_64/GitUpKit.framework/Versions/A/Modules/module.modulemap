@@ -1,0 +1,6 @@
+framework module GitUpKit {
+  umbrella header "GitUpKit.h"
+
+  export *
+  module * { export * }
+}
